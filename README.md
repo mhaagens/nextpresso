@@ -21,7 +21,7 @@
 ```nextpresso controller posts```
 
 #### Developing
-```yarn start```
+```yarn start``` then go to ```http://localhost:3000```
 
 #### Building
-```yarn run build```
+```yarn run build```, files are written do ./dist.
