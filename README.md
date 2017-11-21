@@ -24,4 +24,4 @@
 ```yarn start``` then go to ```http://localhost:3000```
 
 #### Building
-```yarn run build```, files are written do ./dist.
+```yarn run build```, files are written to ./dist.
