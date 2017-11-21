@@ -5,7 +5,6 @@
 * Hot Reloading
 * Route Controller-generator
 
-
 ## Requirements
 * Node 8+
 * yarn (installed globally)
@@ -13,7 +12,7 @@
 ## Usage
 
 #### Install
-```npm install nextpresso -g``` or ```yarn global add nespresso```
+```npm install nextpresso -g``` or ```yarn global add nextpresso```
 
 #### Create a project
 ```nextpresso init``` or ```nextpresso init myProject```
