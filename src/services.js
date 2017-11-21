@@ -130,6 +130,8 @@ const generateController = async (controller_name, options) => {
 		}
 	});
 
+	console.log(exists);
+
 	if (exists) {
 		console.log(chalk.red`Controller already exists`);
 		return;
@@ -170,7 +172,9 @@ const generateController = async (controller_name, options) => {
 
 	log(`${capitalize(controller_name)}Controller created.`);
 	} catch (err) {
-		console.error(err);
+		if (err.description && err.description.includes("Duplicate binding")) {
+			console.log(chalk.red`Controller already exists`);
+		}
 	}
 };
 
