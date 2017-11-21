@@ -27,4 +27,4 @@
 ```yarn run build```, files are written to ./dist.
 
 ## More
-Follow me at [@mhaagens]: https://twitter.com/mhaagens for more about React, Express, DevOps and Node.js.
+Follow me at [@mhaagens](https://twitter.com/mhaagens) for more about React, Express, DevOps and Node.js.
