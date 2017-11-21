@@ -130,8 +130,6 @@ const generateController = async (controller_name, options) => {
 		}
 	});
 
-	console.log(exists);
-
 	if (exists) {
 		console.log(chalk.red`Controller already exists`);
 		return;
