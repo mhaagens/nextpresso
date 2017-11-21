@@ -122,8 +122,6 @@ const generateController = async (controller_name, options) => {
 		if (
 			item.type === 'ExpressionStatement' &&
 			item.expression.arguments &&
-			item.expression.arguments.callee &&
-			item.expression.arguments.callee.object &&
 			item.expression.arguments.filter(arg => arg.callee && arg.callee.object && arg.callee.object.name === `${capitalize(controller_name)}Controller`).length
 		) {
 			exists = true;
