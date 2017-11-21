@@ -1,10 +1,14 @@
 {
   "name": "nextpresso",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "./dist/index.js",
   "author": {
     "name": "Martin Haagensli",
     "url": "https://twitter.com/mhaagens"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhaagens/nextpresso.git"
   },
   "license": "MIT",
   "bin": {
