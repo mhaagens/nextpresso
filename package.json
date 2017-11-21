@@ -2,6 +2,10 @@
   "name": "nextpresso",
   "version": "0.0.1",
   "main": "./dist/index.js",
+  "author": {
+    "name": "Martin Haagensli",
+    "url": "https://twitter.com/mhaagens"
+  },
   "license": "MIT",
   "bin": {
     "nextpresso": "./dist/index.js"
