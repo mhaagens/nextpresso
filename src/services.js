@@ -73,7 +73,7 @@ const generateProject = async (project_name = '', options) => {
 	await execAsync(
 		`cd ./${
 			project_name
-		} && yarn init --private --yes && yarn add express && yarn add webpack clean-webpack-plugin webpack-node-externals start-server-webpack-plugin dotenv-webpack babel-loader babel-preset-env babel-core babel-preset-stage-2 --dev`
+		} && yarn init --private && yarn add express && yarn add webpack clean-webpack-plugin webpack-node-externals start-server-webpack-plugin dotenv-webpack babel-loader babel-preset-env babel-core babel-preset-stage-2 --dev`
 	);
 
 	spinner.text = "Adding scripts to package.json";
