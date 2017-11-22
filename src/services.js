@@ -2,7 +2,6 @@ import { copy, writeFile, readJson, readFile, mkdirp } from 'fs-extra';
 import { promisify, inspect } from 'util';
 import { resolve } from 'path';
 import chalk from 'chalk';
-import ProgressBar from 'progress';
 import ora from "ora";
 import { prompt } from 'inquirer';
 import { exec } from 'child_process';
@@ -30,11 +29,9 @@ const generateProject = async (project_name = '', options) => {
 	}
 
 	// Progress bars
-	const progress = new ProgressBar(':title [:bar] :percent', { total: 9, width: 25, clear: true });
 	const spinner = ora("Copying webpack configuration").start();
 
 	// Actions
-	//progress.tick(1, { title: 'Copying webpack config' });
 	await copy(`${libDir}/webpack.config.js`, `./${project_name}/webpack.config.babel.js`);
 	await copy(`${libDir}/webpack.config.dist.js`, `./${project_name}/webpack.config.dist.babel.js`);
 	await delay(250);
